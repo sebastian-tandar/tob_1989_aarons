@@ -8,11 +8,6 @@ creatinineCLModel <- function(age, bw, C_creatinine){
   (150 - age) * bw / C_creatinine
 }
 
-# Conversion function for %BSV/%IIV to eta values
-convertBSVtoETA <- function(individual_variability){
-  log(1+(individual_variability^2))
-}
-
 # INITIAL STATE -----------
 initialState <- c(m_central = 0, m_peripheral = 0)
 

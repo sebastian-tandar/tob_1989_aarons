@@ -3,6 +3,6 @@ CL,fixed,0.059,,,0.002,standard_error,(L/h) / (mL/min),NA,Table 2,creatinine cle
 k12,fixed,0.012,,,0.003,standard_error,1/h,NA,Table 2,mass transfer rate constant from the first to the second compartment
 k21,fixed,0.027,,,0.021,standard_error,1/h,NA,Table 2,mass transfer rate constant from the second to the first compartment
 V1,fixed,0.327,,,0.014,standard_error,L/kg,NA,Table 2,bodyweight proportionality factor for volume of central compartment
-sigma,residual_error,21,,,38,standard_error,percentage,NA,Table 2,
+sigma,residual_error_additive,21,,,38,standard_error,percentage,NA,Table 2,
 eta_CL,random_effect_%IIV,32,,,44,standard_error,percentage,CL,Table 2,
 eta_V,random_effect_%IIV,3,,,112,standard_error,percentage,V1,Table 2,
