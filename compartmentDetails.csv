@@ -1,0 +1,3 @@
+﻿compartment_number,compartment_name,details,units
+1,m_central,Drug mass in the central compartment (blood). Divide by volume of distribution to get concentration,mg
+2,m_peripheral,Drug mass in the peripheral compartment (empirical).,mg
