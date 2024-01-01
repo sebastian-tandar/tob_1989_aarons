@@ -12,7 +12,7 @@ creatinineCLModel <- function(age, bw, C_creatinine){
 initialState <- c(m_central = 0, m_peripheral = 0)
 
 # MODEL OBJECT # --------------
-ab_amn_1989_tob_aarons <- rxode2({
+model_object <- rxode2({
   # pre-calculation
   V_central = V_ratio * exp(eta_V_ratio) * BW 
   k_elimination = (CL_sigma * exp(eta_CL_sigma) * CL_creatinine) / V_central
