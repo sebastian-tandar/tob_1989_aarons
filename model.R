@@ -14,8 +14,8 @@ initialState <- c(m_central = 0, m_peripheral = 0)
 # MODEL OBJECT # --------------
 model_object <- rxode2({
   # pre-calculation
-  V_central = V_ratio * exp(eta_V_ratio) * BW 
-  k_elimination = (CL_sigma * exp(eta_CL_sigma) * CL_creatinine) / V_central
+  V_central = V_ratio * exp(eta_V) * BW 
+  k_elimination = (CL_sigma * exp(eta_CL) * CL_creatinine) / V_central
   
   # ODEs
   d/dt(m_central) = -(k_elimination + k12) * m_central + k21 * m_peripheral
