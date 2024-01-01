@@ -22,6 +22,5 @@ ab_amn_1989_tob_aarons <- rxode2({
   d/dt(m_peripheral) = k12 * m_central - k21 * m_peripheral
   
   # post-calculation
-  C_central = m_central / V_central
-  C_central ~ add(add.err)
+  C_central = (m_central / V_central) + add.err # is this the correct syntax? nlmixr2 syntax does not seem to work
 })
