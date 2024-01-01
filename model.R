@@ -23,4 +23,5 @@ ab_amn_1989_tob_aarons <- rxode2({
   
   # post-calculation
   C_central = m_central / V_central
+  C_central ~ add(add.err)
 })
